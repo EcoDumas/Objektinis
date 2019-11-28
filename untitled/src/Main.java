@@ -7,25 +7,24 @@ public class Main {
 
     public static void main(String[] args) {
 
-        TransportasImpl pirmas = new TransportasImpl("vandens", true, 2010);
-        TransportasImpl antras = new TransportasImpl("oro", false, 2011);
+        TransportasImpl pirmas = new TransportasImpl("oro", true, 2010);
+        TransportasImpl antras = new TransportasImpl("vandens", false, 2011);
         TransportasImpl trecias = new TransportasImpl("sausumos", true, 1999);
-        TransportasImpl ketvirtas = new TransportasImpl("vandens", true, 2008);
+        TransportasImpl ketvirtas = new TransportasImpl("oro", true, 2008);
         TransportasImpl penktas = new TransportasImpl("sausumos", true, 2000);
 
-        AutomobilisImpl sestas = new AutomobilisImpl("oro", false, 2018, "Audi", 5, false);
-        AutomobilisImpl sept = new AutomobilisImpl("sausumos", true, 2015, "Mercedes", 4, true);
-        AutomobilisImpl astuoni = new AutomobilisImpl("vandens", true, 2019, "Lada", 5, true);
-        AutomobilisImpl devini = new AutomobilisImpl("sausumos", true, 2020, "Peugeot", 3, true);
-        AutomobilisImpl desimt = new AutomobilisImpl("oro", false, 2022, "Nezinomas", 8, false);
+        AutomobilisImpl sestas = new AutomobilisImpl("oro", false, 2018, "BMW", 5, false);
+        AutomobilisImpl septintas = new AutomobilisImpl("sausumos", true, 2015, "AUDI", 4, true);
+        AutomobilisImpl astuntas = new AutomobilisImpl("vandens", true, 2019, "MERCEDES", 5, true);
+        AutomobilisImpl devintas = new AutomobilisImpl("sausumos", true, 2020, "FORD", 3, true);
+        AutomobilisImpl desimtas = new AutomobilisImpl("oro", false, 2022, "TOYOTA", 8, false);
 
 
        // System.out.println(sestas);
 
-        TransportasImpl[] sarasas = {pirmas, antras, trecias, ketvirtas, penktas, sestas, sept, astuoni, devini, desimt};
+        TransportasImpl[] sarasas = {pirmas, antras, trecias, ketvirtas, penktas, sestas, septintas, astuntas, devintas, desimtas};
 
-
-        //boolean result = true;
+        
 
         for(TransportasImpl varyklis : sarasas) {
            if (varyklis instanceof AutomobilisImpl){
